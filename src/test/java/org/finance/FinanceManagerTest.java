@@ -1,9 +1,8 @@
 package org.finance;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -32,7 +31,7 @@ public class FinanceManagerTest {
         manager.addTransaction(new Transaction(20.0,"Games",TransactionType.EXPENSE));
         
         // 100 - 30 - 20 = 50
-        assertEquals(50.0, manager.calculateBalance(),"Balance should match");
+        assertEquals(50.0, manager.getBalance(),"Balance should match");
     }
 
     @Test
